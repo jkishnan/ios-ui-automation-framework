@@ -28,7 +28,7 @@ class LoginPage {
 
     // MARK: - Synchronization
 
-    func waitForLoginScreen(timeout: TimeInterval = 5) -> Bool {
+    func waitForLoginScreen(timeout: TimeInterval = 2) -> Bool {
         return usernameField.waitForExistence(timeout: timeout)
     }
 
@@ -42,12 +42,11 @@ class LoginPage {
         passwordField.clearAndTypeText(text: password)
 
         loginButton.tap()
-        sleep(2)
-    }
+        }
 
     // MARK: - Validations
 
-    func isWelcomeMessageDisplayed(timeout: TimeInterval = 5) -> Bool {
+    func isWelcomeMessageDisplayed(timeout: TimeInterval = 2) -> Bool {
         return welcomeMessage.waitForExistence(timeout: timeout)
     }
 }

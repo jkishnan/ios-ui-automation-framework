@@ -4,7 +4,7 @@ final class LoginTests: BaseTest {
 
     func testValidLogin() {
 
-        let loginPage = LoginPage(app: app)
+        let loginPage = LoginPage(app: BaseTest.app)
 
         XCTAssertTrue(loginPage.waitForLoginScreen())
 
@@ -15,7 +15,7 @@ final class LoginTests: BaseTest {
 
     func testInvalidLogin() {
 
-        let loginPage = LoginPage(app: app)
+        let loginPage = LoginPage(app: BaseTest.app)
 
         XCTAssertTrue(loginPage.waitForLoginScreen())
 
