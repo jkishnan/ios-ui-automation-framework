@@ -29,20 +29,42 @@
 		582A4EC12F5556F2008DF986 /* ShopAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShopAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		582A4EF82F556973008DF986 /* Exceptions for "ShopApp" folder in "ShopApp" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				ShopAppUITests/Base/BaseTest.swift,
+				ShopAppUITests/Pages/LoginPage.swift,
+				ShopAppUITests/Tests/LoginTests.swift,
+				"ShopAppUITests/Utilities/XCUIElement+Extensions.swift",
+			);
+			target = 582A4EA72F5556F1008DF986 /* ShopApp */;
+		};
+		582A4EF92F556973008DF986 /* Exceptions for "ShopApp" folder in "ShopAppUITests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				ShopAppUITests/Base/BaseTest.swift,
+				ShopAppUITests/Pages/LoginPage.swift,
+				ShopAppUITests/Tests/LoginTests.swift,
+				"ShopAppUITests/Utilities/XCUIElement+Extensions.swift",
+			);
+			target = 582A4EC02F5556F2008DF986 /* ShopAppUITests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		582A4EAA2F5556F1008DF986 /* ShopApp */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				582A4EF82F556973008DF986 /* Exceptions for "ShopApp" folder in "ShopApp" target */,
+				582A4EF92F556973008DF986 /* Exceptions for "ShopApp" folder in "ShopAppUITests" target */,
+			);
 			path = ShopApp;
 			sourceTree = "<group>";
 		};
 		582A4EBA2F5556F2008DF986 /* ShopAppTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = ShopAppTests;
-			sourceTree = "<group>";
-		};
-		582A4EC42F5556F2008DF986 /* ShopAppUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = ShopAppUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -77,7 +99,6 @@
 			children = (
 				582A4EAA2F5556F1008DF986 /* ShopApp */,
 				582A4EBA2F5556F2008DF986 /* ShopAppTests */,
-				582A4EC42F5556F2008DF986 /* ShopAppUITests */,
 				582A4EA92F5556F1008DF986 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -152,9 +173,6 @@
 			);
 			dependencies = (
 				582A4EC32F5556F2008DF986 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				582A4EC42F5556F2008DF986 /* ShopAppUITests */,
 			);
 			name = ShopAppUITests;
 			packageProductDependencies = (
